@@ -1,0 +1,192 @@
+MDScreen:
+    name:"audio"
+    audio_item:audio_item
+    screen_audio:screen_audio
+    screen_mic:screen_mic
+    MDBoxLayout:
+        orientation:"vertical"
+        MDScreen:
+            size_hint:1,.1
+            md_bg_color:app.theme_cls.primary_color
+            MDIconButton:
+                icon:"cog"
+                pos_hint:{"center_x":.93,"center_y":.6}
+                icon_size:dp(25)
+                on_press:app.push("parametre")
+            MDScreen:
+                MDLabel:
+                    text:"Naudio"
+                    font_size:"45sp"
+                    pos_hint:{"center_x":.3,"center_y":.25}
+                    halign:"center"
+                    markup:True
+                    color:1,170/255,23/255,1
+                    bold:True
+                    font_name:"font/abigate desgo italic.otf"
+
+        MDScreen:
+            MDTabs:
+                Bas:
+                    title: "           audio           "
+                    Audio:
+                        id:screen_audio
+
+                Bas:
+                    id:audio_item
+                    title: "           musique           "
+                    Musique:
+                        id:screen_mic
+
+
+<Audio@MDFloatLayout>:
+    rail:rail
+    MDScreen:
+        size_hint:1,.6
+        pos_hint:{"center_x":.5,"center_y":.5}
+        #md_bg_color:"yellow"
+        MDLabel:
+            pos_hint:{"center_x":.5,"center_y":.9}
+            halign:"center"
+            text:"0:20:02"
+            font_name:"font/DS-DIGIB.TTF"
+            font_size:"40sp"
+        RelativeLayout:
+            id:rail
+            size_hint:1,.5
+            #md_bg_color:"cyan"
+            pos_hint:{"center_x":.5,"center_y":.5}
+
+        MDFloatingActionButton:
+            id:pla
+            icon:"stop"
+            #icon:"stop-circle"
+            icon_size:dp(60)
+            pos_hint:{"center_x":0.5,"center_y":.15}
+            on_press:
+                app.anim(pla,placir,True)
+                app.enregistrer()
+                #print(rail.height,rail.width)
+
+        MDFloatingActionButton:
+            id:placir
+            icon:"play"
+            #icon:"pause"
+            icon_size:dp(60)
+            pos_hint:{"center_x":.5,"center_y":.15}
+            on_press:
+                self.icon = "pause" if self.icon == "play" else "play"
+                app.anim(pla,placir,False)
+                app.defilement(rail.width,rail.height)
+
+<Musique@MDFloatLayout>:
+    item:item
+    idscreen_musique:idscreen_musique
+    idscreen_musique1:idscreen_musique1
+    MDBoxLayout:
+        orientation:"vertical"
+        ScrollView:
+            do_scroll_x:False
+            do_scroll_y:True
+            size_hint_y:1
+            pos_hint:{"center_x":.5,"y":.0}
+            bar_width:1
+            GridLayout:
+                id:item
+                cols:1
+                height:self.minimum_height
+                row_default_height:80
+                size_hint_y:None
+                padding:10,8
+                spacing:10,2
+
+        MDScreen:
+            id:idscreen_musique
+            size_hint:1,None
+            md_bg_color:1,170/255,23/255,1
+            radius:dp(8)
+            #pos_hint:{"center_x":.5,"y":.005}
+            MDScreen:
+                id:idscreen_musique1
+                MDIconButton:
+                    icon:"skip-previous"
+                    pos_hint:{"center_x":.2,"center_y":.7}
+                    icon_size:dp(35)
+                    on_press:app.push("audio1")
+                MDIconButton:
+                    icon:"play"
+                    pos_hint:{"center_x":.45,"center_y":.7}
+                    icon_size:dp(35)
+                    on_press:app.push("audio1")
+                MDIconButton:
+                    icon:"skip-next"
+                    pos_hint:{"center_x":.7,"center_y":.7}
+                    icon_size:dp(35)
+                    on_press:app.push("audio1")
+                MDIconButton:
+                    icon:"close"
+                    pos_hint:{"center_x":.94,"center_y":.5}
+                    icon_size:dp(25)
+                    on_press:app.push("audio1")
+
+                MDSlider:
+                    size_hint:.78, .5
+                    hint:False
+                    #hint_bg_color: "blue"
+                    #hint_text_color: "white"
+                    hint_radius: [6, 0, 6, 0]
+                    pos_hint:{"center_x":.5,"center_y":.18}
+
+
+
+
+<Item>:
+    elevation:4
+    md_bg_color:.9,.9,.9,1
+    radius:[8]
+    size_hint_y:.1
+    MDScreen:
+        pos_hint:{"center_x":.5,"center_y":.5}
+        MDFloatLayout:
+            id:bar
+            size_hint:.03,1
+            pos_hint:{"center_x":.02,"center_y":.5}
+            md_bg_color:1,170/255,23/255,1
+            radius:[6]
+        MDCard:
+            size_hint:None,None
+            height:dp(72)
+            width:dp(75)
+            md_bg_color:app.theme_cls.primary_dark
+            pos_hint:{"center_x":.17,"center_y":.5}
+            MDLabel:
+                text:"format"
+                #font_name:"Poppins-Regular.ttf"
+                bold:True
+                halign:"center"
+
+        MDIconButton:
+            id:bt
+            icon:"dots-vertical"
+            icon_size:dp(25)
+            pos_hint:{"center_x":.95,"center_y":.8}
+            on_release: app.mnu(bt)
+        MDLabel:
+            text:"durer"
+            #font_name:"Poppins-Regular.ttf"
+            markup:True
+            size_hint_x:.9
+            line_height:.8
+            halign:"center"
+            pos_hint:{"center_x":.85,"center_y":.3}
+        MDLabel:
+            text:"nom"
+            markup:True
+            font_size:"20sp"
+            color:"blue"
+            pos_hint:{"center_x":.8,"center_y":.8}
+        MDLabel:
+            id:description
+            text:"date"
+            markup:True
+            line_height:.8
+            pos_hint:{"center_x":.8,"center_y":.3}

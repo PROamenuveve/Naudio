@@ -1,0 +1,10 @@
+2023-11-19 16:48:39.785612 ║ERROR	║ 7572	║ runRead finished exception: (109, 'ReadFile', 'Le canal de communication a été fermé.')
+--------------------------------------------------------------------------------
+httpgen.py, line 34, "httpgen.TransportManager.runRead"
+httpgen.py, line 81, "httpgen.TransportManager.read"
+uitransport.py, line 94, "uitransport.ApplicationInspectorBridge.readMessage"
+uitransport.py, line 147, "uitransport.ApplicationInspectorBridgePipe._readData"
+
+"error" exception, (109, 'ReadFile', 'Le canal de communication a été fermé.')
+--------------------------------------------------------------------------------
+

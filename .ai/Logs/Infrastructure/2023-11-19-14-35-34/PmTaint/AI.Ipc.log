@@ -1,0 +1,3 @@
+Send message {Progress, MessagePack, 4 bytes}
+Send message {InitializeDone, ByteArray, 0 bytes}
+Elapsed time of the 'Initialize' stage: 00:00:00.2993971

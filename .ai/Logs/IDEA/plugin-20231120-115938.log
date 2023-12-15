@@ -1,0 +1,13 @@
+2023-11-20T11:59:38.200Z [s.AiToolwindowsInitializer.reinitializeToolWindows] INFO AI state ENABLED
+2023-11-20T11:59:38.200Z [ctureModificationListener$Companion.initForProject] INFO ProjectStructureModificationListener is init for project Naudio
+2023-11-20T11:59:39.354Z [ojectContextInitializer.createInfrastructureFacade] INFO isInfrastructureDebug: false
+2023-11-20T11:59:39.356Z [ojectContextInitializer.createInfrastructureFacade] INFO Use port: 50266
+2023-11-20T11:59:39.515Z [ProjectContextInitializer.initializeProjectContext] INFO Plugin context initialized
+2023-11-20T11:59:39.516Z [itializeManager$initializeAnalyzer$1.invokeSuspend] INFO initializing infrastructure
+2023-11-20T11:59:55.590Z [intellij.services.AiInitializeManager.initializeAI] INFO IntelliJ listens web server on port: 63342
+2023-11-20T12:00:18.525Z [initializeInfrastructureInstance$1$1.invokeSuspend] INFO Infrastructure initialized
+2023-11-20T12:00:24.184Z [y.aiintellij.utils.logging.AiProjectLogger.cleanUp] INFO Clean up logs files was started
+2023-11-20T12:00:25.250Z [y.aiintellij.utils.logging.AiProjectLogger.cleanUp] INFO Clean up logs files was finished
+2023-11-20T12:00:29.997Z [ices.aie.AieInitializer$initialize$1.invokeSuspend] INFO AIE integration isn't initialized, skipping listeners initialization
+2023-11-20T12:00:31.527Z [ctionsUtilsKt.updateDaemonCodeAnalyzerForOpenFiles] INFO Update daemon code analyzer
+2023-11-20T12:22:36.271Z [tializer$initializeInfrastructureInstance$2.invoke] WARN java.net.SocketException: Connection reset

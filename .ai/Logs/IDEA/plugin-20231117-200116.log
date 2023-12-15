@@ -1,0 +1,3 @@
+2023-11-17T20:01:16.301Z [s.AiToolwindowsInitializer.reinitializeToolWindows] INFO AI state ENABLED
+2023-11-17T20:01:16.307Z [ctureModificationListener$Companion.initForProject] INFO ProjectStructureModificationListener is init for project Naudio
+2023-11-17T20:01:21.849Z [intellij.services.AiInitializeManager.initializeAI] INFO IntelliJ listens web server on port: 63342

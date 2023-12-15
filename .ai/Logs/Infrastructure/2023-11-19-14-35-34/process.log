@@ -1,0 +1,105 @@
+16:48:36.130  ERROR  @DependencyCheckProcessor: "DependencyCheck" core process was suddenly completed. Start parameters: "-jar "C:\Users\amenuveve\AppData\Local\Application Inspector Analyzer\utils\dependencyCheck\dependency-check-ai-core.jar" --logs-dir "C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.ai\Logs\Infrastructure\2023-11-19-14-35-34\DependencyCheck" --connection-type "Pipe" -p "pipe-f62aa791-7ca1-4e72-9a70-e6e17fb7e1ce-dependencycheck" -log-level "Error"". Exit code 0
+16:48:36.296  ERROR  @DependencyCheckProcessor: Error in "DependencyCheck" core initialization stage.
+––– details ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Processing.Processors.MessageProcessorBase`2.Processing.Processors.IProcessorStager.InitializeAsync(Vfs projectVfs, Boolean isIncrementalScan)
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+16:48:36.619  ERROR  @DependencyCheckProcessor: Critical error "CoreCrushedError" was received.
+16:48:36.864  ERROR  Scanning by DependencyCheck was failed.
+––– details ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+System.Exception: CoreCrushedError
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+16:48:39.104  ERROR  Scanning is failed.
+––– details ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Processing.Processors.MessageProcessorBase`2.Processing.Processors.IProcessorStager.InitializeAsync(Vfs projectVfs, Boolean isIncrementalScan)
+   at Infrastructure.Services.ScanService.StartStageAsync(Stage stage, CancellationToken cancellationToken)
+   at Infrastructure.Services.ScanService.InnerRunAsync(ScanStartSettings startSettings)
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+16:48:39.650  ERROR  Some nodes has invalid scan status:
+
+  ./.idea/inspectionProfiles/profiles_settings.xml
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.idea\inspectionProfiles\profiles_settings.xml
+    Configuration, PmTaint, Python
+  ./.idea/.gitignore
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.idea\.gitignore
+    Configuration, PmTaint, Python
+  ./.idea/jsonSchemas.xml
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.idea\jsonSchemas.xml
+    Configuration, PmTaint, Python
+  ./.idea/misc.xml
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.idea\misc.xml
+    Configuration, PmTaint, Python
+  ./.idea/modules.xml
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.idea\modules.xml
+    Configuration, PmTaint, Python
+  ./.idea/Naudio.iml
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.idea\Naudio.iml
+    Configuration, PmTaint, Python
+  ./.idea/workspace.xml
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.idea\workspace.xml
+    Configuration, PmTaint, Python
+  ./font/abigate desgo italic.otf
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\font\abigate desgo italic.otf
+    Configuration, PmTaint, Python
+  ./font/DS-DIGIB.TTF
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\font\DS-DIGIB.TTF
+    Configuration, PmTaint, Python
+  ./image/images.jpg
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\image\images.jpg
+    Configuration, PmTaint, Python
+  ./audio.kv
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\audio.kv
+    Configuration, PmTaint, Python
+  ./audio1.kv
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\audio1.kv
+    Configuration, PmTaint, Python
+  ./main.py
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\main.py
+    Configuration, PmTaint, Python
+  ./musique.kv
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\musique.kv
+    Configuration, PmTaint, Python
+  ./parametre.kv
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\parametre.kv
+    Configuration, PmTaint, Python
+  ./presentation.kv
+  C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\presentation.kv
+    Configuration, PmTaint, Python
+
+16:48:39.780  ERROR  Terminate scanning...
+––– details ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Processing.Processors.MessageProcessorBase`2.Processing.Processors.IProcessorStager.InitializeAsync(Vfs projectVfs, Boolean isIncrementalScan)
+   at Infrastructure.Services.ScanService.StartStageAsync(Stage stage, CancellationToken cancellationToken)
+   at Infrastructure.Services.ScanService.InnerRunAsync(ScanStartSettings startSettings)
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+16:48:39.780  ERROR  Scanning was failed.
+––– details ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Processing.Processors.MessageProcessorBase`2.Processing.Processors.IProcessorStager.InitializeAsync(Vfs projectVfs, Boolean isIncrementalScan)
+   at Infrastructure.Services.ScanService.StartStageAsync(Stage stage, CancellationToken cancellationToken)
+   at Infrastructure.Services.ScanService.InnerRunAsync(ScanStartSettings startSettings)
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+16:49:07.324  ERROR  @DependencyCheckProcessor: Error in "DependencyCheck" core preprocessing stage.
+––– details ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at IPC.Services.MessageHandler`1.GetAsync(THeader requestHeader, THeader responseHeader, ArraySegment`1 data)
+   at Processing.Processors.Handlers.ScanMessageHandler`2.PrecheckAsync()
+   at Processing.Processors.MessageProcessorBase`2.Processing.Processors.IProcessorStager.PrecheckAsync()
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+16:49:07.392  ERROR  Error during stage: Precheck
+––– details ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at IPC.Services.MessageHandler`1.GetAsync(THeader requestHeader, THeader responseHeader, ArraySegment`1 data)
+   at Processing.Processors.Handlers.ScanMessageHandler`2.PrecheckAsync()
+   at Processing.Processors.MessageProcessorBase`2.Processing.Processors.IProcessorStager.PrecheckAsync()
+   at Infrastructure.Services.ScanService.<>c__DisplayClass64_0.<<StartStageAsync>b__0>d.MoveNext()
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––

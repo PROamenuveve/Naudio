@@ -1,0 +1,41 @@
+MDScreen:
+    name:"parametre"
+    MDBoxLayout:
+        orientation:"vertical"
+        spacing:dp(2)
+        MDScreen:
+            size_hint:1,None
+            height:dp(90)
+            md_bg_color:app.theme_cls.primary_color
+            MDIconButton:
+                icon:"arrow-left-bold"
+                pos_hint:{"center_x":.05,"center_y":.65}
+                icon_size:dp(25)
+                on_press:app.push("audio")
+
+            MDLabel:
+                text:"parametre"
+                font_size:"40sp"
+                pos_hint:{"center_x":.42,"center_y":.25}
+                halign:"center"
+                markup:True
+                color:1,170/255,23/255,1
+                bold:True
+                font_name:"font/abigate desgo italic.otf"
+        MDCard:
+            md_bg_color:app.theme_cls.primary_dark
+            on_press:print("salut")
+            MDLabel:
+                text:"salut"
+                halign:"center"
+                pos_hint:{"center_x":.9,"center_y":.65}
+        MDCard:
+            on_press:print("salut")
+            MDScreen:
+                md_bg_color:app.theme_cls.primary_dark
+                MDLabel:
+                    halign:"center"
+                    text:"salut"
+                    pos_hint:{"center_x":.9,"center_y":.2}
+
+        MDLabel:

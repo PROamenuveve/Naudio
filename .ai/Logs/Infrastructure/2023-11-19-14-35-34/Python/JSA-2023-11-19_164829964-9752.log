@@ -1,0 +1,3 @@
+﻿#Thread(1) 2023-11-19 16:48:30.503: INFO: Platform: x64, framework: .NETCoreApp,Version=v6.0
+#Thread(1) 2023-11-19 16:48:30.582: INFO: Core version 1.5.0.0, started with command line: "C:\Users\amenuveve\AppData\Local\Application Inspector Analyzer\utils\python\JSA.dll" --logs-dir "C:\Users\amenuveve\Desktop\Nouveau dossier\Naudio\.ai\Logs\Infrastructure\2023-11-19-14-35-34\Python" --connection-type Pipe -p pipe-469db491-717f-47b7-8349-6c3a50a5309f-python --language python
+#Thread(11) 2023-11-19 16:48:38.775: INFO: Selected language provider: JSA.PythonProvider v1.6.11
